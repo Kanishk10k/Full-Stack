@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- why css file is link always in head tag??? -->
+     <!-- <style>
+        /* internal CSS...you can do same as external CSS...can give property to every tag*/
+        #text{
+            background-color: blueviolet;}
+            /* since inline csss has more priority than internal css hence it is showing aqua bg color */
+        .main{
+            background-color: darkblue;
+
+        }
+            *{
+              padding:30px;
+            }
+        /* prioprity order:-
+        inlineCSS >id > class >TagName */
+     </style> -->
+     <link rel="stylesheet" href="style.css"> 
+     <!-- above is the external css -->
+      <!-- proprity order:
+       inline > internal or external 
+       among internal and external which will come at last will overlap and will have more priority -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap" rel="stylesheet">
+      <!-- above links are from google fonts -->
+</head>
+<body>
+    <!-- below is the inline CSS -->
+    <p  id="text"  /{*style="background-color: aqua;" }*/ class="main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id odio magnam accusamus vitae natus sapiente? Inventore accusantium dolorem amet nesciunt perspiciatis ad a sit sint laudantium nihil vitae possimus sed sequi illo, velit corporis non consequatur debitis aperiam aspernatur id minima porro. Quae, tenetur animi quis illum harum sunt architecto a vitae adipisci suscipit facilis? Ab quae eligendi quaerat, rerum quas provident, dolor corrupti et ut recusandae ratione similique cum blanditiis omnis minima voluptatem, dicta qui doloribus animi. Soluta tempore rerum, delectus unde sapiente ut adipisci quidem! Sed quibusdam officiis aperiam optio asperiores numquam amet, dignissimos assumenda natus! Quasi, ducimus?</p>
+    
+    <!-- CSS SELECTOR 
+       1) ID  it should be unique(standard says) but we can keep id name same . we use # for id 
+       2) CLASS it can be given to multiple tags . we use dot(.) for class
+       3) Tag name
+       4) UNIVERSAL SELECTOR  it is represented by * -->
+       <p id="main" class="grey-qo-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim velit ex error reiciendis delectus sunt est blanditiis officia similique, beatae obcaecati corrupti! Minus, at. Veniam amet quaerat quia tempora ipsam voluptas incidunt! Perspiciatis, perferendis aperiam animi distinctio quaerat iste odit sint quos corporis necessitatibus ea eos ducimus tenetur et voluptatem?</p>
+    
+       <a id="google" href="www.google.com">Google</a>
+       <div id="container">
+        <p>HARDIK</p>
+       </div>
+</body>
+</html>
+<!-- learn about RGB ,hexcode 
+ In RGBA, there is 4 th parameter opacity which lies btw from 0 to 1  also known as alpha channel -->
