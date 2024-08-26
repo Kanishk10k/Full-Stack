@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#parent{
+    background-color: #dadada;
+    width:40%;
+    font-size: 30px;
+}
+h1{
+    font-size: 2rem; 
+    /* font-size: 2em;  */
+    /* 1em= 30px */
+    /* em is used for give size according to the parent */
+    /* rem is according to the screen size 
+    1 rem =16px 
+    */
+}
+h2{
+    font-size: 1em;
+} 
+h3{
+    font-size: 1.5em;
+}
+ 

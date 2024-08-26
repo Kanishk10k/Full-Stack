@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* inheritance */
+        /* #container{
+            color: blueviolet;
+            font-size: 20px;
+        } */ 
+
+
+        /* group selector */
+        /* #container,#main{
+            color: blueviolet;
+            font-size: 20px;
+        } */
+
+
+        /* child combinators*/
+        /* #container > p{
+            color: rgb(39, 115, 182);
+            font-size: 40px;
+            font-weight: 700;
+        } */
+
+
+        /* a[target]{
+         font-size: 100px;
+        } */
+
+        /* attribute selector: you can apply css to the selected value*/
+        
+        /* a[target="_blank"]{
+         font-size: 50px;
+         color: brown;
+        } */
+
+        /* fullscreen size coverage*/
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        /* #container2{
+            width: 50vw;
+            height: 50vh;
+            font-size: 20px;
+        } */
+        /* #main2{
+            font-size: 3rem;
+            background-color: cornflowerblue;} */
+
+        /* #container3{
+           background-color:cadetblue;
+           height: 500px;
+           width: 100px;
+           display: inline;
+           /* when you give inline then height and width will not work and when we use inline-block then it will allow height and width */
+        /* } */
+
+        /* #main3{
+            background-color:cadetblue ;
+            height: 500px;
+            width: 100px;
+            display: inline-block;
+        } */ 
+
+        /* position: absolute, relative,fixed,sticky, static */
+        #container4{
+               width: 200px;
+               height: 200px;
+               background-color:chocolate;
+               /* position: relative;
+               top: 100px;
+               left: 500px; */
+               /* when position is relative then top left=0 will be consider from its initial position */
+               /* bottom: 0;
+               right: 0; */
+               /* we use two property together either top and left or botom right */
+               /* position: absolute; */
+               /* it will remove the space or space occupied by choclate block basically it goes in z index if you scroll it will not move with scroll */
+               /* top: 0; */
+               /* left: 500px;  */
+               /* supporting property top , bottom,left,right */
+
+               position: fixed;
+               /* even if you scroll it will be fixed at given position it will move on scrolling */
+            }
+    </style>
+</head>
+<body>
+    <!-- advance CSS Selecetor -->
+     <!-- inheritance : if you give a property to parent class it will be applied on the child class-->
+      <!-- group selector : if two div need to give same property then group there CSS -->
+       <!-- <div id="container">
+      <p id="para1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, corporis? Corporis, ipsa. Corporis, hic, pariatur mollitia ea corrupti sit dolor neque repellendus excepturi saepe, quod temporibus ad quam aut explicabo eum blanditiis natus nulla dolorem. Temporibus est reiciendis dolorum laborum, blanditiis itaque, sed ea placeat, magnam impedit tenetur ullam laboriosam!</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, corporis? Corporis, ipsa. Corporis, hic, pariatur mollitia ea corrupti sit dolor neque repellendus excepturi saepe, quod temporibus ad quam aut explicabo eum blanditiis natus nulla dolorem. Temporibus est reiciendis dolorum laborum, blanditiis itaque, sed ea placeat, magnam impedit tenetur ullam laboriosam!</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, corporis? Corporis, ipsa. Corporis, hic, pariatur mollitia ea corrupti sit dolor neque repellendus excepturi saepe, quod temporibus ad quam aut explicabo eum blanditiis natus nulla dolorem. Temporibus est reiciendis dolorum laborum, blanditiis itaque, sed ea placeat, magnam impedit tenetur ullam laboriosam!</p>      
+    </div>  -->
+
+    <!-- <div id="main">
+        <p>hello techno</p>
+        <p>hello udaipur</p>
+        <p>hello t1</p>
+    </div> -->
+    <!-- <a href="" target="_blank">Google</a> -->
+    <!-- incase you will not provide the href it will open same website in new tab -->
+    <!-- <a href="" target="_self">Instagram</a> -->
+
+    <!-- Units -->
+     <!-- px,vh,vd,%,em,rem-->
+      <!-- below units are used for making responsive website  -->
+      <!-- vw :- view port width
+           vh :- view  port height-->
+           <!-- % is use to go the parent element take eg:- 80% then it will take 80% of parent height(any property)  -->
+            <!-- em what will be the parents value eg height=20px then it will consider 1em=20px 
+             if you give child with 4 em then it will take 80 px-->
+
+             <!-- rem is based on browser screen setting for example you have set the font size small then it will act accordingly-->
+           
+             <!-- <div id="container2">
+            <div id="main2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus voluptates placeat dolore, corporis ex aliquam, accusamus perferendis laudantium laboriosam, eaque quisquam provident officia! Libero doloribus quia quos voluptatem id similique nostrum error incidunt esse quod numquam eum, deserunt dolorum ut hic, quam nisi quis? Similique minus deleniti commodi totam id.
+            </div>
+           </div> -->
+
+           <!-- Display -->
+           <!-- block level element will occupy complete width when width is not mention i.e if you will not specify display property then wont be allowing any another element to be paste in same line-->
+            <!-- <div id="container3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, placeat.</div>
+                <span>Lorem ipsum dolor sit amet.</span>
+                <span>Hello everyone</span>
+                <div id="main3">Lorem ipsum dolor sit amet.</div>
+
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cupiditate ea perferendis repellendus dignissimos aspernatur illo, odio modi temporibus libero animi maxime rerum est ipsum nesciunt porro laborum at esse quam ullam. Aperiam esse iure saepe praesentium, autem perferendis ipsa?</div> -->
+
+
+            <!-- Position is the brahmastra of css must be use in the end if nothing is working -->
+       <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi id facere vitae, eos consectetur inventore, officia perspiciatis iste voluptates, maiores facilis a tenetur. Et doloremque animi voluptate amet voluptatibus obcaecati dolor fugit reprehenderit. At aliquid a culpa minima sunt, sed exercitationem, neque ea perferendis sint quaerat perspiciatis similique voluptatum excepturi! Nihil quidem, at ea corrupti atque libero vitae commodi recusandae aliquid cum quaerat sequi doloribus. Voluptatum voluptates quos fuga cumque vel dolorem eum, eaque asperiores consectetur iure explicabo nulla accusantium ex sunt, sed officia mollitia? Aspernatur earum exercitationem alias eligendi saepe. Incidunt ipsa accusamus in exercitationem laborum laudantium, aut reprehenderit!</div>
+        <div id="container4"></div>
+        <!-- DropDown -->
+         <select name="" id="">
+            <option value="">Jaipur</option>
+            <option value="">Udaipur</option>
+            <option value="">Kota</option>
+         </select>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maiores laborum odit voluptate unde minima fuga illo ducimus, obcaecati animi. Nesciunt vitae earum cupiditate enim? Vel nesciunt sint eveniet dicta unde qui explicabo consequatur mollitia obcaecati quos possimus, laudantium non necessitatibus, optio odio magni, animi quasi. Reiciendis incidunt consequuntur sint magnam ad unde modi minus sunt et! Recusandae optio praesentium fugit architecto reiciendis voluptate doloremque totam facere repellendus, itaque voluptatum nesciunt. Inventore consectetur, mollitia earum temporibus amet aspernatur quos rerum doloribus, facilis aut laborum necessitatibus dolor sed nihil nostrum natus voluptatum adipisci neque quod rem laboriosam, esse dignissimos. Distinctio, nemo aut error voluptatem nostrum reprehenderit necessitatibus velit cumque sed voluptates reiciendis, ducimus ratione eius dicta corporis esse id earum quas, accusantium officia numquam sunt quos. Voluptate esse excepturi, voluptas ducimus est unde tempora architecto veniam nobis quasi, dolorem voluptatum. Quas ut minus consequatur cum aliquid animi, vero quos hic dolorem? Provident quaerat nulla dignissimos quasi at suscipit ad ea ut tenetur possimus modi ipsum facilis, saepe officiis sunt, libero odit eveniet amet dolores cumque distinctio! Tenetur architecto voluptate omnis sapiente sint, repellendus maiores quae quibusdam excepturi fugit rem tempora accusamus. At, dolorum, illum aperiam mollitia iure dicta optio excepturi in odio ipsum dolores rem tempore itaque ratione ad nemo ea voluptas aliquam quas hic voluptatem. Exercitationem iure velit laborum delectus quaerat voluptatum debitis libero voluptatibus possimus blanditiis deserunt similique at provident neque, quasi nisi tempora dolorem natus nam maxime distinctio illo incidunt! Deserunt voluptas quas cum sequi, natus aperiam dolor impedit assumenda esse vero, molestiae provident explicabo ipsam harum maxime dicta aliquam modi veritatis beatae! Doloribus deleniti voluptate est sequi necessitatibus placeat! Reprehenderit saepe laborum neque autem minus voluptatum incidunt tempora, at, ullam eaque culpa porro quidem expedita. Quod enim non earum doloremque nobis illo ipsa, a numquam, at expedita natus autem odit ut accusantium, fuga molestiae nostrum deleniti labore inventore omnis aliquam. Ipsa dolorem cum quas numquam provident eveniet assumenda cumque soluta natus iusto dignissimos eaque vel laboriosam, quaerat quos veniam accusantium? Quos possimus adipisci dignissimos reiciendis cum laboriosam cupiditate beatae nulla consectetur qui eum fugit iure, sed iste quaerat inventore nostrum deleniti, neque tenetur. Tempore aliquid recusandae numquam alias corporis rem magnam dolor, illum, maiores amet vel iure labore earum voluptate eligendi at sequi non in? Natus non molestiae accusantium quam tempora numquam iure eveniet mollitia corporis nostrum, consectetur, perspiciatis sunt incidunt eius dolorum illo saepe! Sapiente delectus vel distinctio impedit magnam sit ipsum assumenda minus qui eligendi iste obcaecati fugit quia, dolorum pariatur reiciendis? Eveniet commodi, explicabo placeat sed debitis aspernatur non maiores quae praesentium atque ipsam numquam totam eius nemo maxime qui molestias voluptates quas illo blanditiis soluta iure! Adipisci atque tenetur eius exercitationem in non tempore molestias reprehenderit, ducimus tempora ratione fuga, eligendi asperiores sed est aut ut veniam cupiditate omnis laborum numquam. Consequuntur reprehenderit aliquam sunt distinctio tempora beatae ad veniam nostrum ea error, dolorum recusandae officiis repudiandae cumque pariatur non voluptatibus accusamus obcaecati incidunt dolor! Et ipsa rem quaerat culpa totam suscipit animi praesentium atque. Dolorum, consequuntur cupiditate mollitia unde, provident pariatur dolore nobis itaque nulla laboriosam iusto maxime aliquam veritatis possimus repellat facilis molestias. Maiores optio numquam odit magnam? Nesciunt, eius culpa. Voluptas quas tenetur corrupti eos fugit asperiores voluptatem cumque minus, iste saepe sequi ratione ipsa perferendis maxime praesentium. Itaque dicta voluptatem, magni quam quibusdam at alias repudiandae, possimus molestias tempore, sit provident nisi facere? Quidem commodi, laudantium error odit quia eveniet saepe illo quae. Aliquid doloremque pariatur, nobis provident quia modi atque magnam veritatis ullam nemo magni ipsa ex tempore odio animi dolores aliquam quaerat quas fugit hic nostrum? Minus ex nemo autem aspernatur fuga dignissimos, voluptatum laudantium quo ducimus commodi animi deleniti blanditiis cupiditate eligendi beatae vitae molestiae quam distinctio? Debitis possimus ex omnis quidem iure quis nesciunt ut illum sapiente tenetur odit commodi voluptatem minima laudantium, quod in. Asperiores doloremque, ab tempore nihil blanditiis odio perspiciatis odit minima eveniet accusamus aliquid reprehenderit animi rem voluptatem, provident ducimus? Perspiciatis facilis doloribus sunt rerum pariatur asperiores deserunt tempore minima consequuntur doloremque placeat magni dolorem, id veritatis nesciunt fugit atque numquam nobis odit, rem soluta eaque. Id dignissimos est nobis vero aspernatur incidunt aliquam voluptatem temporibus! Dolorem suscipit voluptates fugiat facere voluptatum iusto assumenda ipsum ea, error nemo. Fugiat molestiae hic quis earum! Officia nam debitis sequi. Voluptatum, corrupti! Neque distinctio fugit facilis qui, enim, atque minus tempore error ab quae quas, beatae eius nesciunt cum quos obcaecati. Quos quidem, exercitationem reiciendis quam veniam laborum sunt, fuga magni ad tenetur pariatur. Fuga eligendi labore, quam dignissimos quasi nam assumenda laudantium repellat quo expedita aspernatur tempore, hic, laboriosam et sapiente consequuntur molestias quibusdam inventore vitae quod dicta similique eius vero quisquam. Veritatis fuga, ipsam quos, repellat ea voluptas corrupti nobis expedita voluptatem labore commodi. Adipisci quia repellat ex suscipit vero vel possimus ducimus quibusdam qui. Nulla eius suscipit nesciunt sint deserunt voluptates ratione, sed dicta eveniet accusantium vero quas mollitia quidem, illum corrupti perspiciatis a. Corporis, error ad cum laboriosam, dolor voluptatem architecto atque distinctio facere quae quam necessitatibus veniam nostrum neque quos odio accusamus! Sunt deleniti laborum quod vero, labore nulla eaque. Quasi molestiae laborum accusamus quidem cupiditate numquam, aliquid accusantium sapiente tenetur officiis a, fuga quaerat qui amet nesciunt ex asperiores excepturi. Inventore quas, id suscipit recusandae culpa, voluptates animi reprehenderit officiis, vitae illo voluptas ab commodi quasi. Reprehenderit labore nesciunt quisquam voluptate ipsa itaque placeat, saepe molestiae, atque aperiam cupiditate, assumenda nihil corporis recusandae exercitationem accusamus eius. Laborum et facere expedita, porro velit id qui voluptate magnam, fuga harum nulla atque explicabo quaerat quos consequatur ipsam error officia quae in vel tempora. Qui, reiciendis unde! Quibusdam autem suscipit aut iure voluptas voluptatum voluptates beatae pariatur perspiciatis possimus quis cum neque velit sequi explicabo, doloribus accusamus illo, nobis eaque labore officia rem est? Rerum debitis dignissimos impedit reprehenderit et alias, quod, asperiores cumque minima totam consequuntur cupiditate quam atque iure non! Eaque, culpa, deserunt earum quo tempora animi tenetur atque, ducimus deleniti minima excepturi temporibus recusandae praesentium eligendi nesciunt ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nostrum, fugit ipsa alias nemo molestias assumenda consequatur illo laborum asperiores commodi ut labore minus, qui exercitationem expedita suscipit ex eaque. Magnam vel distinctio perferendis nihil doloribus consectetur illo quas veniam soluta tempore dignissimos repudiandae, voluptate error modi pariatur nam? Explicabo ipsum quidem animi eos? Exercitationem tempore quo, impedit nesciunt ullam voluptatem molestiae eius harum alias saepe, fugiat repudiandae libero? Mollitia soluta aliquam maxime suscipit? Fugiat similique magnam veritatis qui beatae impedit saepe aut quas earum labore, eveniet quia aspernatur porro mollitia eaque ex cumque rerum veniam dolor praesentium recusandae? Sequi amet nobis odit id veritatis, sapiente rerum possimus! Aut ex quod commodi recusandae officia rerum, ipsam nam in corrupti corporis sequi iusto eaque magni vitae deserunt molestiae veritatis quos inventore dolorem adipisci, reprehenderit minus! Reprehenderit quod cupiditate ea praesentium at odit iusto fuga consequatur quae adipisci architecto, voluptate nemo nisi quisquam, quis dicta. Perspiciatis dignissimos vero ab esse blanditiis voluptate sit eligendi aliquid cumque, sequi ipsam! Blanditiis quam repellat omnis nisi labore, dolores suscipit illo. Eveniet voluptates ex laudantium corporis nisi soluta magni cupiditate, quos, natus optio velit blanditiis quod veniam. Placeat, non quibusdam molestiae modi ea illo recusandae ipsa eos mollitia voluptas facilis repudiandae aliquam sint magnam fugit vero molestias architecto sit cumque soluta. Quis temporibus aut officiis minima numquam animi, debitis rem pariatur itaque, nesciunt eos delectus magnam quo iure recusandae in unde architecto? Exercitationem quibusdam temporibus maiores debitis quasi eligendi nostrum nihil consectetur nisi, ipsam repellat accusamus necessitatibus omnis ipsum corporis deleniti ab esse accusantium illum id dolorum! Corporis, earum. Aliquid doloribus saepe iusto aspernatur voluptate aliquam cupiditate veniam reiciendis blanditiis, quisquam libero modi at deserunt aperiam laboriosam? Consectetur animi dicta incidunt, voluptatibus veritatis recusandae vero repellat fugit quod laudantium excepturi odio quam rerum. Excepturi consectetur, assumenda, officiis atque porro molestias, vero odit sequi ut esse corporis minus ducimus itaque ab repellendus voluptatem! Eius natus alias totam libero! Ipsam fugit quos voluptatem explicabo modi impedit error voluptatibus odio hic quo dolores minus dolorem perferendis ipsa veniam iure repudiandae iusto saepe fugiat sunt expedita, sapiente harum consequatur? Nisi, omnis, ea eos, recusandae eum fuga quisquam natus unde consequuntur rem porro alias excepturi nam. Impedit temporibus nulla aut placeat provident qui aliquid error, et dolores, similique minima ducimus, expedita modi reiciendis maiores aliquam sint commodi illum saepe animi at! Temporibus quos, odio soluta eveniet cupiditate exercitationem laborum similique suscipit mollitia aperiam esse accusantium, modi perspiciatis optio hic maxime quam. Maiores quidem, vel asperiores nulla dignissimos at illo voluptate velit eaque doloribus aspernatur nobis incidunt, amet ut. Repudiandae fugiat nesciunt ab obcaecati culpa eaque tenetur quam quasi esse ipsa ad dicta voluptatem maxime rerum nulla laudantium delectus magni vero, necessitatibus soluta? Asperiores distinctio fugiat quasi adipisci tempore molestiae quos laudantium error illum cum dolorum, consequuntur praesentium cupiditate alias, explicabo itaque quisquam totam blanditiis ducimus at nostrum ex nemo mollitia. Similique, illum? Aperiam impedit illo non perferendis, aspernatur, cum animi nulla, quia eum debitis in iste ipsam vel! Eaque, quaerat temporibus.</div>
+    </body>
+</html>
+<!-- IQ  what is the difference btw em vs rem ??
+     IQ  what is the difference btw display:inline vs display: inline-block ???? 
+      /* Soln:-when you give inline then height and width will not work and when we use inline-block then it will allow height and width 
+     IQ  what is the difference btw visibility hidden and display:none ???
+     Soln:- visibility:hidden hides the element, but it still takes up space in the layout. display:none removes the element from the document. It does not take up any space.
+     
+     DQ why two div has been made display inline and inline-block then still they are coming in block ??
+     soln because height weight of 2nd having dispaly inline-block is more given hence they are in block if we reduce the height and width then  it will come back in line  -->
+     

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Flex box parent properties */
+        .container{
+            border: 3px solid red;
+            height: 70vh;
+            display: flex;
+            
+            /* flex-direction: column; */
+            /* flex direction is used to give to the parent so that child elements can arange in span way */
+            
+            /* flex-wrap: wrap; */
+            /* by default it is no wrap but when we make it wrap and box elements has some width then if we increase or reduce the width
+            then we know that elemnts will occupy some fixed length then box element will shift to new row  */
+            
+            gap: 10px;
+            flex-flow: row wrap;
+            /* flex flow is the combination of fex direction and flex wrap instead of both this can be used */
+            
+            justify-content: space-around;
+            /* mostly used property and works along main axis*/
+
+            /* align-items: center; */
+            /* it will adjust it to the center of  parent element  it works along cross axis */
+            align-items: flex-start; 
+            /* bydefault align item: stretch */
+            /* for box to occupy content space then use align item : end start center  */
+
+            align-content: flex-start;
+            /* It will manage spaces btw them  */
+        }
+        .box{
+            border: 3px solid green;
+            width: 100px;
+            /* margin: 10px; */
+        }
+        /* gap vs margin margin will give space in all direction but gap will give space btw the boxes only like from top , right side    */
+    </style>
+</head>
+<body>
+    <!-- position fixed particular element at its position 
+         position sticky  -->
+
+         <!-- flex,grid,pseudo classes,pseudo elements,overflow -->
+
+         <!-- initially flex is algin in row direction you can change it by using flex-direction :column
+          row wise direction is by deafualt main axis and column wise direction is cross axis if you change the direction to the column then main becames crosss and cross became main-->
+         
+         <!-- Shortcut to generate below div -->
+          <!-- .container>.box#box-${box-$}*8 -->
+         <div class="container">
+            <div class="box" id="box1">box-1</div>
+            <div class="box" id="box2">box-2</div>
+            <div class="box" id="box3">box-3</div>
+            <div class="box" id="box4">box-4</div>
+            <div class="box" id="box5">box-5</div>
+            <div class="box" id="box6">box-6</div>
+            <div class="box" id="box7">box-7</div>
+            <div class="box" id="box8">box-8</div>
+         </div>
+    
+</body>
+</html>

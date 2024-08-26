@@ -1,0 +1,94 @@
+<!-- Need change in code from sir's repo -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* trnslate,scale,skew,rotate */
+        body{
+            background-color: cadetblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #container{
+            height: 400px;
+            width: 400px;
+            /* background-color:cornflowerblue; */
+            /* transform: translate(200px,500px); */
+            /* it is used to move to (x,y) location */
+            /* transform: scale(2); */
+            /* it become 2 times of its original value ie. height and width */
+            /* transform: rotate(135deg); */
+            /* this will rotate around z-axis */
+            /* transform: rotateX(30deg); */
+            /* this will rotate around x-axis and similarly in y-axis */
+            /* transform: skew(30deg); */
+            /* just try it not used to much*/
+            transition: 0.5s ease-in-out;
+            /* it is important to notice that transition is used here not in hover css */
+            border: 3px solid burlywood;
+            border-radius: 50%;
+            animation: spinner 2s linear infinity;
+        }
+        #box{height: 100px;
+            width: 100px;
+            background-color: antiquewhite;
+            /* transition: 2s linear; */
+            align-content: center;
+            border-radius: 50%;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation: spinner 4s ease-in-out 4; */
+            
+
+        }
+        /* #container:hover{
+            background-color: rgb(250, 19, 19);
+            border-radius: 50%;
+            transform: rotate(190deg);
+            border:1px solid black;
+            transform: translateX(700px);
+        } */
+
+        /* #container:hover #box{
+            transform: translate(300px,300px);
+        } */
+        /* here spinner is randome name give by us */
+        /* @keyframes spinner{
+           0%,100%{
+            transform: translate(0,0);
+           }
+           25%{
+            transform: translate(300px,0);
+           }
+           50%{
+            transform: translate(300px,300px);
+           }
+           75%{
+            transform: translate(0,300px);
+           }
+        } */
+
+        @keyframes spinner{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div id="container">
+<!-- <p>hello box</p> -->
+<div id="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ul li:first-child{
+          background-color: aqua;
+        }
+        ul li:last-child{
+          background-color: green;
+        }    */
+        /* formula of n th -child */
+        /* an + b */
+        /* ul li:nth-child(2){
+            background-color: brown;
+        } */
+         ul li:nth-child(2n+1){
+          background-color: gray;
+         }
+        /* ::selection(){
+            background-color: black;
+            color: cornflowerblue;
+         } */
+         /* this will change the color when you will select something */
+         
+         /* if you want to select only paragraph tag  */
+         /* p::selection(){
+            background-color: black;
+            color: cornflowerblue;
+         } */
+
+         /* #para::first-letter{
+            background-color: cadetblue;} */
+
+         /* #para::first-line{
+            background-color: blue;} */
+            /* spread tag vs first-line */
+
+            /* #para::before{
+                content: "Hello Techno";
+            content is important to write inorder to use this property
+                background-color: blueviolet;
+                font-size: larger;    
+            } */
+            /* #para::after{
+                content: "Hello Techno";
+            content is important to write inorder to use this property
+                background-color: blueviolet;
+                font-size: larger;    
+            }
+             */
+             /* TRY THIS */
+             /* #para:hover::before{
+                content: "Hello Techno";
+            content is important to write inorder to use this property
+                background-color: blueviolet;
+                padding: 2px; 
+            } */
+            
+            
+    </style>
+</head>
+<body>
+    <!-- hover,visited,active,first child,last child,nth child -->
+     <!-- pseudo elements has :: where as pseudo classes has : -->
+      <!-- Pseudo Elements -->
+       <!-- First Letter ,first line,before,after -->
+      <ul>
+        <li>Item-1</li>
+        <li>Item-2</li>
+        <li>Item-3</li>
+        <li>Item-4</li>
+        <li>Item-5</li>
+        <li>Item-6</li>
+        <li>Item-7</li>
+        <li>Item-8</li>
+        <li>Item-9</li>
+      </ul>
+      <!-- <ul>
+        <li>List-1</li>
+        <li>List-2</li>
+        <li>List-3</li>
+      </ul> -->
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, maxime excepturi. Doloremque asperiores, molestiae expedita consectetur nesciunt tenetur ipsam repellendus voluptatum dolorem ipsa iste fugit harum praesentium mollitia atque, saepe voluptas nostrum omnis, in rem distinctio reiciendis! Alias enim hic doloremque quod voluptatem cupiditate eligendi molestiae exercitationem voluptates eos voluptatibus deserunt mollitia, sint illo. Nisi fugiat maxime cupiditate. Ullam non voluptates cum ipsum quasi accusantium distinctio soluta aperiam reiciendis numquam ut, aspernatur, perspiciatis, illum corporis nostrum ipsam laboriosam. Laboriosam blanditiis est, culpa aspernatur tempore placeat eveniet, ad consectetur dolorem iusto neque cupiditate nisi facere, quia minus voluptatem dolorum laborum! Blanditiis, quibusdam ipsa, provident quas soluta quos ad a magnam iusto amet non minima sunt iure in optio tempore quasi totam nostrum! Aliquam ipsum reiciendis iusto minus molestiae dolore dolorem! Voluptatum doloribus quo veritatis laudantium enim odio, sit odit, facilis pariatur molestias obcaecati voluptates dolorum facere. Ipsam, est eveniet! Porro, debitis? Nostrum aperiam natus et libero suscipit officia sit exercitationem quidem harum veritatis, corrupti excepturi molestiae, magnam veniam ex dicta. Maxime, atque eveniet eius at, repellendus voluptates mollitia amet repudiandae adipisci quo harum pariatur hic consequuntur corrupti facere ducimus expedita voluptatem aliquid ea. Nesciunt officia culpa distinctio quod! Veritatis, enim inventore?</p>
+</body>
+</html>

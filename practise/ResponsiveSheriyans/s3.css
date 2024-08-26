@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+h1{
+    font-size: 6vw;
+/* vh is less than vw  ie.e vw>vh
+hence we will usually use vw  */
+}
+/* if we keep font-size in vw then on changing the width the size will change 
+   on keeping vh then on changing the height the font size will change 
+   in different devices then change will be different in phone height will be more
+   than width in tablet width will be more than height */
+
+   /* Solution to above problem
+    vmax : jo max ho uske acccording
+   vmin :  jo min ho uske according*/

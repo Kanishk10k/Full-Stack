@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+/* .box{
+    height: 300px;
+    width: 300px;
+    background-color: royalblue;
+    position: absolute;
+    left: 50%;
+    /* use of absolute sholud be very less bcause it creates issue for webpage to be responsive*/
+    /* instead of position absolute you can use display:flex*/
+
+/* }  */
+
+.parent{
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    /* align -item for align elements in center in y axis */
+    /* justify-content: center; */
+    /* it align-item in center in  x axis */
+    justify-content: space-evenly;
+    /* in this property boxes will shrink if you want to avoid then use below property  */
+    flex:wrap ;
+    /*  it is applied only to the parent to avoid shrinkling */
+}
+.child1{
+    height: 500px;
+    width: 500px;
+    background-color: crimson;
+    border: 2px solid #000;
+}
+.child2{
+    height: 500px;
+    width: 500px;
+    background-color: crimson;
+    border: 2px solid #000;
+}
