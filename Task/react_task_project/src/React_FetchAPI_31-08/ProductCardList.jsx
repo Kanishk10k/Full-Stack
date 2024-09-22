@@ -24,13 +24,13 @@ const ProductCardList = () => {
   }
 
   if (error) {
-    return <p>Error: {error.message}</p>;
+    return <p style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>Error: {error.message}</p>;
   }
 
   return (
     <div className="product-card-list">
       {products.map(product => (
-        <ProductCard key={product.id} product={product} />
+        <ProductCard product={product} />
       ))}
     </div>
   );

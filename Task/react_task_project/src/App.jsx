@@ -9,6 +9,8 @@ import React, { useState } from 'react';
 // import TextInput from "./React_Props_30-08/TextInput.jsx"
 // import ToggleSwitch from "./React_Props_30-08/ToggleSwitch.jsx"
 // import TodoList from "./React_Props_30-08/TodoList.jsx"
+// import ProductCardList from "./React_FetchAPI_31-08/ProductCardList.jsx"
+import ProductCardList from "./React_ContextAPI_02-09/ProductCardList.jsx"
 
 export default function App(){
 
@@ -34,6 +36,8 @@ export default function App(){
 
   return(
     <div>
+    {/* React Day1 */}
+
     {/* <Greeting name="Kanishk"/>
     <ProfileCard name="Kanishk Gupta" age={20} location="Udaipur" /> */}
     {/* <StatusMessage status="success" />
@@ -49,7 +53,15 @@ export default function App(){
     <ToggleSwitch toggleState={handleToggle} /> */}
     {/* <h1>My Todo List</h1>
     <TodoList todos={todos} /> */}
+    
 
+      {/* React Day2 */}
+
+      {/* <ProductCardList /> */}
+
+
+      {/* React Day3 */}
+      <ProductCardList />
 
     </div>
   )}
