@@ -10,6 +10,8 @@ import React, { useState } from 'react';
 // import ToggleSwitch from "./React_Props_30-08/ToggleSwitch.jsx"
 // import TodoList from "./React_Props_30-08/TodoList.jsx"
 // import ProductCardList from "./React_FetchAPI_31-08/ProductCardList.jsx"
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { ProductProvider } from './React_ContextAPI_02-09/context/Provider.jsx';
 import ProductCardList from "./React_ContextAPI_02-09/ProductCardList.jsx"
 
 export default function App(){
@@ -61,7 +63,15 @@ export default function App(){
 
 
       {/* React Day3 */}
-      <ProductCardList />
+
+      <ProductProvider>
+      <BrowserRouter>
+        <Routes>
+            <Route path="/productList" element={<ProductCardList />} />
+            {/* Add more routes as needed */}
+          </Routes>
+      </BrowserRouter>
+    </ProductProvider>
 
     </div>
   )}
